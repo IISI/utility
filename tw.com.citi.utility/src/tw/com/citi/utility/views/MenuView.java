@@ -304,9 +304,11 @@ public class MenuView extends ViewPart {
                 ISelection selection = viewer.getSelection();
                 Object obj = ((IStructuredSelection) selection)
                         .getFirstElement();
-                if (obj instanceof TreeParent) return;
+                if (obj instanceof TreeParent)
+                    return;
                 IWorkbenchPage page = MenuView.this.getViewSite().getPage();
-                BrowserEditorInput editorInput = new BrowserEditorInput("http://localhost:8080/utility/app/" + obj.toString());
+                BrowserEditorInput editorInput = new BrowserEditorInput(
+                        "http://localhost:8080/utility/app/" + obj.toString());
                 IEditorPart editorPart = page.findEditor(editorInput);
                 if (editorPart == null) {
                     try {
@@ -332,7 +334,7 @@ public class MenuView extends ViewPart {
 
     private void hookSelectionChangedAction() {
         viewer.addSelectionChangedListener(new ISelectionChangedListener() {
-            
+
             @Override
             public void selectionChanged(SelectionChangedEvent event) {
                 doubleClickAction.run();
