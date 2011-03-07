@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Citi Utility
+Bundle-SymbolicName: tw.com.citi.utility; singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: tw.com.citi.utility.Activator
+Bundle-Vendor: IISI
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.springframework.util;bundle-version="1.0.3"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Import-Package: tw.com.iisi.rabbithq.editors

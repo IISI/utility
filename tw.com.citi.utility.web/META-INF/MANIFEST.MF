@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Utility Web
+Bundle-SymbolicName: tw.com.citi.utility.web
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: tw.com.citi.utility.web.Activator
+Bundle-Vendor: IISI
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: javax.servlet;version="2.5.0",
+ javax.servlet.http;version="2.5.0",
+ javax.servlet.jsp;version="2.1";resolution:=optional,
+ javax.servlet.jsp.tagext;version="2.1";resolution:=optional,
+ org.osgi.framework;version="1.3.0",
+ tw.com.iisi.aquarius.web,
+ tw.com.iisi.rabbithq.web.filter
+Web-ContextPath: /utility
+Require-Bundle: org.apache.wicket.wicket;bundle-version="1.4.15"
