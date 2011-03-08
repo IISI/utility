@@ -14,8 +14,8 @@
    </configIni>
 
    <launcherArgs>
-      <vmArgs>-Djetty.home=D:/tools/jetty
--Dlogback.configurationFile=D:/tools/jetty/etc/logback.xml</vmArgs>
+      <vmArgs>-Djetty.home=features/tw.com.iisi.rabbithq.jetty_1.0.0
+-Dlogback.configurationFile=features/tw.com.iisi.rabbithq.jetty_1.0.0/etc/logback.xml</vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
    </launcherArgs>
 
