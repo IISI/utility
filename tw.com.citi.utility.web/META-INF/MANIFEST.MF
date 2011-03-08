@@ -14,4 +14,8 @@ Import-Package: javax.servlet;version="2.5.0",
  tw.com.iisi.aquarius.web,
  tw.com.iisi.rabbithq.web.filter
 Web-ContextPath: /utility
-Require-Bundle: org.apache.wicket.wicket;bundle-version="1.4.15"
+Require-Bundle: org.apache.wicket.wicket;bundle-version="1.4.15",
+ org.apache.wicket.wicket-ioc;bundle-version="1.4.15",
+ org.apache.wicket.wicket-spring;bundle-version="1.4.15",
+ org.springframework.web;bundle-version="3.0.5",
+ org.springframework.osgi.web;bundle-version="1.2.1"
